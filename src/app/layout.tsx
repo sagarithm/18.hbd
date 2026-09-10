@@ -33,7 +33,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" data-wf-domain="www.era-residence.com" className="w-mod-js">
+    <html
+      lang="en"
+      data-wf-domain="www.era-residence.com"
+      data-wf-page="6a068da7ad91b057365bf968"
+      data-wf-site="6a068da7ad91b057365bf967"
+      className="w-mod-js"
+    >
       <head>
         {/* Google Fonts Luxury Fallbacks */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,7 +62,7 @@ export default function RootLayout({
           {`try{Typekit.load();}catch(e){}`}
         </Script>
       </head>
-      <body className="body">
+      <body className="body" data-barba="wrapper">
         {children}
 
         {/* Runtime scripts in exact dependency order */}
